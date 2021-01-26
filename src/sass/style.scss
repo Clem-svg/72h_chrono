@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+
+$color-blue: rgb(197, 240, 248);
+
+
+
+@font-face {
+  font-family: 'Big Noodles';
+  src: url('../fonts/big_noodle_titling.ttf');
+}
+
+h1 {
+  color: $color-blue;
+  font-family: 'Big Noodles';
+  font-size: 50px;
+}
+
+body {
+  background-repeat: no-repeat;
+}
