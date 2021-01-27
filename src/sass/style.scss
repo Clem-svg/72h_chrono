@@ -1,20 +1,88 @@
 @import "~bootstrap/scss/bootstrap";
 
-$color-blue: rgb(197, 240, 248);
 
-
+$red:  #ca012d;
+$black: #191919;
+$white: #F2F2F2;
 
 @font-face {
-  font-family: 'Big Noodles';
-  src: url('../fonts/big_noodle_titling.ttf');
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-ExtraBold.ttf');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  margin: 20px;
+  background: $black;
+  color: $white;
+}
+
+
+header {
+
+  div{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  h1{
+    color:$red;
+  }
+
+  input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: $black;
+    background-image:url('../images/search.png');
+    background-size: 13px;
+    background-position: 12px 7px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 32px;
+    outline: none;
+    opacity: 0.9;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
 }
 
 h1 {
-  color: $color-blue;
-  font-family: 'Big Noodles';
-  font-size: 50px;
+  font-family: 'Heebo';
+  font-size: 35px;
 }
 
-body {
-  background-repeat: no-repeat;
+
+.gameCard {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+
+  .card-img-top{
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  a{
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-size: 20px;
+    color: $white;
+
+  }
+
+
+
 }
+

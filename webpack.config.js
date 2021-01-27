@@ -118,6 +118,3 @@ module.exports = {
 
 };
 
-module.exports = env => {
-  return config
-}

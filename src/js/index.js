@@ -3,8 +3,26 @@ import 'bootstrap';
 
 import {routes} from './routes';
 
+const userSearch = document.getElementById('gameSearch')
+const link = document.getElementById("myLink");
+console.log(link)
 
-let pageArgument;
+
+document.getElementById("searchForm")
+  .addEventListener("keyup", function(e) {
+    if (e.code === 'Enter') {
+        console.log(userSearch.value.split(" ").join('+'))
+        link.setAttribute('href', `#pagelist/${userSearch.value.split("/").join('+')}`);
+        window.open(
+          link.href
+        );
+
+    }
+    }
+  );
+
+
+let pageArgument ;
 
 const setRoute = () => {
   let path = window.location.hash.substring(1).split("/");
