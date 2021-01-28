@@ -69,6 +69,7 @@ const PageList = (argument = "") => {
       <br>
       </div>
       <div class="articles row mx-2 my-2"> Loading...</div>
+      <button id"next">Show more</button>
       </section>
 
     `;

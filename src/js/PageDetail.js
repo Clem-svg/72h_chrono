@@ -34,9 +34,6 @@ const PageDetail = (argument) => {
           articleDOM.querySelector("video").setAttribute('src', clip.clip);
           articleDOM.querySelector("#buttonToWebsite").setAttribute('href', website);
 
-
-
-
           fetch(`${finalURL}/screenshots?page_size=4`)
           .then((response) => response.json())
           .then((response) => {
@@ -53,7 +50,6 @@ const PageDetail = (argument) => {
             let youtube = response.results;
             console.log(youtube)
             insertYoutube(articleDOM.querySelector("p.youtube span"), youtube)
-
           });
 
 
@@ -69,17 +65,10 @@ const PageDetail = (argument) => {
                   <h5>${article.name}</h5>
                   <p>${findPlatforms(article.parent_platforms)}</p>
                   </a>
-              </div>
-                  `;
+              </div>`;
             });
-
           });
-
-
-
         });
-
-
     };
 
     fetchGame("https://api.rawg.io/api/games/", cleanedArgument);

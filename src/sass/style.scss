@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-
 $red:  #ca012d;
 $black: #191919;
 $white: #F2F2F2;
@@ -37,17 +36,14 @@ body{
 
 
 header {
-
   div{
     display: flex;
     justify-content: space-between;
   }
 
-
   h1{
     color:$red;
   }
-
 
   input{
     align-self: stretch;
@@ -139,8 +135,6 @@ h3{
     padding-top: 13px;
     align-self: flex-end;
   }
-
-
 }
 
 .descriptionTitle {
@@ -153,4 +147,3 @@ h3{
   background-color: $red;
   margin-bottom: 15px;
 }
-
