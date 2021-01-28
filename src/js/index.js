@@ -15,7 +15,6 @@ document.getElementById("searchForm")
         window.open(
           link.href, "_self"
         );
-
     }
     }
   );

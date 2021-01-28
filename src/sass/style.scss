@@ -93,7 +93,7 @@ h3{
 }
 
 
-.gameCard {
+.card {
   background: none;
   display: flex;
   justify-content: space-between;
@@ -109,6 +109,15 @@ h3{
     padding-top: 10px;
     text-decoration: none;
     font-size: 20px;
+  }
+
+  .more-info {
+    display: none;
+  }
+  &--hovered {
+    .more-info{
+      display: block;
+    }
   }
 
 }
@@ -136,5 +145,12 @@ h3{
 
 .descriptionTitle {
   @include title();
+}
+
+.rectangleRouge{
+  width: 150px;
+  height: 11px;
+  background-color: $red;
+  margin-bottom: 15px;
 }
 
