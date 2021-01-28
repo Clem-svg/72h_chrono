@@ -83,6 +83,15 @@ h2{
   color:$red;
 }
 
+h3{
+  @include title();
+  font-size: 20px;
+}
+
+.text-red{
+  color:$red;
+}
+
 
 .gameCard {
   background: none;
@@ -113,11 +122,12 @@ h2{
   display: flex;
   justify-content: flex-end;
 
-  button{
+  #buttonToWebsite{
     @include buttonSettings();
     width: 250px;
     text-align: left;
     padding: 1px 6px 1px 6px;
+    padding-top: 13px;
     align-self: flex-end;
   }
 
@@ -127,3 +137,4 @@ h2{
 .descriptionTitle {
   @include title();
 }
+

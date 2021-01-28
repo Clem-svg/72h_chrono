@@ -4,6 +4,7 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "dayjs": "^1.10.4",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },
