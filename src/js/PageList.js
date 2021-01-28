@@ -13,7 +13,6 @@ const PageList = (argument = "") => {
         finalURL = url + "?search=" + argument;
       }
 
-
       fetch(`${finalURL}`)
         .then((response) => response.json())
         .then((response) => {
@@ -33,28 +32,22 @@ const PageList = (argument = "") => {
                 <p>&#128126; ${article.genres[0].name} </p>
               </div>
 
-            </div>
-                `;
-
-
-
-
+            </div>`;
           });
 
-            //mouseover to get more info
-            const cards = document.querySelectorAll(".card");
-
-            cards.forEach((card) => {
-              card.addEventListener('mouseenter', () => {
-                card.classList.add("card--hovered");
-              });
-              card.addEventListener('mouseout', () => {
-                card.classList.remove("card--hovered");
-              });
-            });
-
-
           document.querySelector(".page-list .articles").innerHTML = articles;
+
+          //mouseover to get more info
+          const cards = document.querySelectorAll(".card");
+
+          cards.forEach((card) => {
+            card.addEventListener('mouseover', () => {
+              card.classList.add("card--hovered");
+            });
+            card.addEventListener('mouseout', () => {
+              card.classList.remove("card--hovered");
+            });
+          });
         });
     };
 
