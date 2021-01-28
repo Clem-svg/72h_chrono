@@ -4,7 +4,7 @@ import {routes} from './routes';
 
 const userSearch = document.getElementById('gameSearch')
 const link = document.getElementById("myLink");
-console.log(link)
+
 
 
 document.getElementById("searchForm")

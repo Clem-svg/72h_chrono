@@ -3,6 +3,7 @@
 $red:  #ca012d;
 $black: #191919;
 $white: #F2F2F2;
+$mobile-width: 480px;
 
 @font-face {
   font-family: 'Heebo';
@@ -23,15 +24,25 @@ $white: #F2F2F2;
   font-family: 'Heebo';
 }
 
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  @include mobile();
+
 }
 
 body{
   margin: 20px;
   background: $black;
   color: $white;
+  @include mobile();
+
 }
 
 
@@ -126,6 +137,7 @@ h3{
   background-size: cover;
   display: flex;
   justify-content: flex-end;
+  @include mobile();
 
   #buttonToWebsite{
     @include buttonSettings();
