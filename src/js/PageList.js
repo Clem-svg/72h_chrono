@@ -43,7 +43,7 @@ const PageList = (argument = "") => {
           case "Web":
           platformsAvailable += `<img src="./src/images/web.png" class="pr-2" alt="icon-pc">`;
           break;
-          default: 
+          default:
           break;
         }
       });

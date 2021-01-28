@@ -10,6 +10,20 @@ $white: #F2F2F2;
   src: url('../fonts/Heebo-ExtraBold.ttf');
 }
 
+@mixin buttonSettings {
+  background-color: $red;
+  color: $white;
+  border-radius: 0;
+  height: 50px;
+  width: 75px;
+  font-family: 'Heebo';
+}
+
+@mixin title {
+  color: $white;
+  font-family: 'Heebo';
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -26,7 +40,7 @@ header {
 
   div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 
@@ -34,7 +48,9 @@ header {
     color:$red;
   }
 
+
   input{
+    align-self: stretch;
     width: 250px;
     height: 30px;
     border: 1px solid rgb(156, 156, 156);
@@ -57,8 +73,14 @@ header {
 }
 
 h1 {
-  font-family: 'Heebo';
+  @include title();
   font-size: 35px;
+}
+
+h2{
+  @include title();
+  text-transform: uppercase;
+  color:$red;
 }
 
 
@@ -74,14 +96,34 @@ h1 {
   }
 
   a{
+    @include title();
     padding-top: 10px;
     text-decoration: none;
-    font-family: 'Heebo';
     font-size: 20px;
-    color: $white;
   }
 
+}
+
+.jumbotron {
+  margin: 0 -1rem;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+
+  button{
+    @include buttonSettings();
+    width: 250px;
+    text-align: left;
+    padding: 1px 6px 1px 6px;
+    align-self: flex-end;
+  }
 
 
 }
 
+.descriptionTitle {
+  @include title();
+}

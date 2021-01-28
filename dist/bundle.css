@@ -9945,12 +9945,13 @@ body {
 
 header div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header h1 {
   color: #ca012d;
 }
 header input {
+  align-self: stretch;
   width: 250px;
   height: 30px;
   border: 1px solid #9c9c9c;
@@ -9971,8 +9972,16 @@ header a:hover {
 }
 
 h1 {
+  color: #F2F2F2;
   font-family: "Heebo";
   font-size: 35px;
+}
+
+h2 {
+  color: #F2F2F2;
+  font-family: "Heebo";
+  text-transform: uppercase;
+  color: #ca012d;
 }
 
 .gameCard {
@@ -9986,9 +9995,36 @@ h1 {
   object-fit: cover;
 }
 .gameCard a {
+  color: #F2F2F2;
+  font-family: "Heebo";
   padding-top: 10px;
   text-decoration: none;
-  font-family: "Heebo";
   font-size: 20px;
+}
+
+.jumbotron {
+  margin: 0 -1rem;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.jumbotron button {
+  background-color: #ca012d;
   color: #F2F2F2;
+  border-radius: 0;
+  height: 50px;
+  width: 75px;
+  font-family: "Heebo";
+  width: 250px;
+  text-align: left;
+  padding: 1px 6px 1px 6px;
+  align-self: flex-end;
+}
+
+.descriptionTitle {
+  color: #F2F2F2;
+  font-family: "Heebo";
 }

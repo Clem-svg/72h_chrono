@@ -7,4 +7,5 @@ const routes = {
   "pagedetail": PageDetail,
 };
 
+
 export {routes};

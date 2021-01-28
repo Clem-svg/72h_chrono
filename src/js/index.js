@@ -1,6 +1,5 @@
 import '../sass/style.scss';
 import 'bootstrap';
-
 import {routes} from './routes';
 
 const userSearch = document.getElementById('gameSearch')
@@ -14,7 +13,7 @@ document.getElementById("searchForm")
         console.log(userSearch.value.split(" ").join('+'))
         link.setAttribute('href', `#pagelist/${userSearch.value.split("/").join('+')}`);
         window.open(
-          link.href
+          link.href, "_self"
         );
 
     }
